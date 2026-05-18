@@ -25,7 +25,7 @@ def get_base64_image(image_path):
         return None
 
 # API Configuration
-API_BASE_URL = "http://localhost:8000"
+API_BASE_URL = st.secrets.get("API_BASE_URL", "http://localhost:8000")
 
 # ==================== CURRENCY CONFIG ====================
 CURRENCIES = {
